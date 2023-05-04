@@ -26,4 +26,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: --var(--very-dark-blue);
+}
+
+.container {
+  background-color: --var(--dark-blue);
+}
+
+.btn {
+  background-color: --var(--orange);
+  color: --var(--white);
 }
