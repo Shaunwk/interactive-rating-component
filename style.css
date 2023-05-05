@@ -23,15 +23,136 @@
 }
 
 body {
-  margin: 0 auto;
-  background-color: --var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /*only way to get container centered vertically is adding a height*/
+  background-color: var(--very-dark-blue);
+  font-family: var(--font-family);
 }
 
+
+/*container for both rating and thank you state*/
 .container {
-  background-color: --var(--dark-blue);
+  background-color: hsla(212, 33%, 18%, 0.621);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+
 }
+
+/*rating state*/
 
 .btn {
-  background-color: --var(--orange);
-  color: --var(--white);
+  background-color: var(--orange);
+  color: #d9d9d9;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-style: none;
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  color: #d9d9d99b;
+  margin-bottom: 1.5rem;
+
+}
+
+.circle,
+.star-icon {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: .25rem;
+}
+
+.star-icon {
+  margin-bottom: 1.25rem;
+  padding-bottom: .25rem;
+}
+
+h1 {
+  color: #d9d9d9;
+  font-weight: 400;
+  margin-bottom: .5rem;
+  font-size: 1.65rem;
+}
+
+p {
+  font-size: var(--paragraph-text);
+  font-weight: 400;
+  color: #d9d9d99b;
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+
+}
+
+/* .rating {
+  display: none;
+} */
+
+/*Thank you state*/
+
+.results {
+  display: none;
+}
+
+.thank-you-img {
+
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.selection {
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  color: var(--orange);
+  padding: .5rem;
+  width: 12rem;
+  background-color: var(--dark-blue);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-h2 {
+  text-align: center;
+  color: #d9d9d9;
+  margin-bottom: 1rem;
+}
+
+.result-par {
+  text-align: center;
+}
+
+.selected-rating {
+  margin: 0 .25rem;
+}
+
+
+/*:hover pseudo-class*/
+
+.circle:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #d9d9d9;
+  color: var(--orange);
 }
