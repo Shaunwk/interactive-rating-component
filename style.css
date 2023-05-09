@@ -157,6 +157,8 @@ p {
   color: var(--orange);
 }
 
+
+/*add when chatGPT told me to while getting help with the javascript */
 .circle.selected {
   background-color: grey;
 }
