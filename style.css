@@ -41,7 +41,6 @@ body {
   max-width: 360px;
   display: flex;
   flex-direction: column;
-
 }
 
 /*rating state*/
@@ -75,7 +74,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: .25rem;
+  padding-top: .25rem; /*without this rating numbers are too high*/
 }
 
 .star-icon {
@@ -112,8 +111,9 @@ p {
 .thank-you-img {
 
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 2rem;
+  display: block;
 }
 
 .selection {
@@ -155,4 +155,8 @@ p {
   cursor: pointer;
   background-color: #d9d9d9;
   color: var(--orange);
+}
+
+.circle.selected {
+  background-color: grey;
 }
